@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightcyan;
+        }
+        h1{
+            text-align: center;
+            background-color: aqua;
+            font-size: 40px;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            align-items: center;
+            margin: auto;
+            background-color: lightgray;
+        }
+        label{
+            font-size: 30px;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+        input{
+            font-size: 25px;
+            width: 90%;
+            margin-bottom: 10px;
+        }
+        button{
+            height: 40px;
+            width: 120px;
+            background-color: rgb(78, 240, 78);
+            border-style: none;
+            border-radius: 10px;
+        }
+        div{
+            text-align: right;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <form action="/login" method="POST">
+        <fieldset>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="*********" required>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <div>
+        <p>New user</p>
+        <button><a href="/signup">Signup</a></button>
+    </div>
+</body>
+</html>
